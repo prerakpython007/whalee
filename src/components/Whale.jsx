@@ -11,12 +11,13 @@ import React, { useRef, useMemo, useEffect } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { useGraph } from '@react-three/fiber'
 import { SkeletonUtils } from 'three-stdlib'
+import Whale from '../../'
 
 export default function Model(props) {
   const group = useRef()
 
   // Load original scene and animations
-  const { scene, animations } = useGLTF('/public/whale.gltf')
+  const { scene, animations } = useGLTF('../../public/whale.gltf')
 
   // Clone the scene for safe animation usage
   const clone = useMemo(() => SkeletonUtils.clone(scene), [scene])
