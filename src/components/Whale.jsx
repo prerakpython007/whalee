@@ -11,6 +11,7 @@ import React, { useRef, useMemo, useEffect } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { useGraph } from '@react-three/fiber'
 import { SkeletonUtils } from 'three-stdlib'
+import Whale from '@/public/whale.gltf'
 
 
 export default function Model(props) {
