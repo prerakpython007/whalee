@@ -15,7 +15,7 @@ function App() {
     <>
       <Canvas>
         <ambientLight intensity={1}/>
-        <OrbitControls/>
+        {/* <OrbitControls/> */}
         <Suspense fallback={null}>
         <Whale/>
         </Suspense>
