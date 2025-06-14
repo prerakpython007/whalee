@@ -17,7 +17,7 @@ export default function Model(props) {
   const group = useRef()
 
   // Load original scene and animations
-  const { scene, animations } = useGLTF('../../public/whale.gltf')
+  const { scene, animations } = useGLTF('../public/whale.gltf')
 
   // Clone the scene for safe animation usage
   const clone = useMemo(() => SkeletonUtils.clone(scene), [scene])
